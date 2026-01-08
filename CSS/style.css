@@ -9,3 +9,107 @@
 body{
 	 font-family: "Montserrat", sans-serif;
 }
+
+nav{
+	display: flex;
+	background-color: #1C2833;
+	height: 80px;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0px 50px 0px 80px;
+	align-items: center;
+}
+
+.nav1_logo{
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav ul li{
+	list-style-type: none;
+	margin: 0px 8px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 7px 13px;
+	border-radius: 3px;
+	transition: 0.5s;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover, nav ul li a.active_bar{
+	background-color: #566573;
+}
+
+.menu_btn{
+	color: white;
+	font-size: 22px;
+	cursor: pointer;
+	display: none;
+}
+
+#click{
+	display: none;
+}
+
+/* Responsive wrok start here  */
+
+@media only screen and (max-width: 940px) {
+
+   .menu_btn{
+	display: block;
+   }
+
+   nav ul{
+    position: fixed;
+	top: 80px;
+	left: -100%;
+	height: 100vh;
+	width: 100%;
+	flex-direction: column;
+	background-color: #17202A;
+	text-align: center;
+	padding-top: 20px;
+	transition: all 0.5s ease;
+   }
+
+   #click:checked ~ .menu_btn i::before{
+	content: "\f00d";
+   }
+   #click:checked ~ ul{
+	left: 0%;
+   }
+
+   nav ul li{
+	margin: 50px 0px;
+   }
+
+   nav ul li a{
+	font-size: 22px;
+   }
+
+   nav ul li a:hover, nav ul li a.active_bar{
+	background: none;
+	color: red;
+   }
+
+}
+
+/* Header section code start */
+
+header{
+	background-image: url('../images/rt.jpg');
+	height: 90vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
