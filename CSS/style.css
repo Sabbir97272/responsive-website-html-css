@@ -242,6 +242,10 @@ font-size: 28px;
 	margin: 20px 0px;
 }
 
+.more_about_venilla ul li{
+	list-style-position: inside;
+}
+
 .more_about_venilla a{
 	text-decoration: none;
 	background-color: yellow;
