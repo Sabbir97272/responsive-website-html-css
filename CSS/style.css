@@ -454,6 +454,42 @@ form p{
 	letter-spacing: 0.1em;
 }
 
+/* Seven section start here  */
+
+#seven_section{
+	padding: 100px 0px;
+}
+
+#takecare_parent{
+	display: flex;
+	margin-left: 200px;
+	margin-right: 200px;
+	gap: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.single_takecare_imagebox{
+	width: 100%;
+}
+
+.single_takecare_imagebox img{
+	width: 100%;
+}
+
+.single_takecare h3{
+	font-size: 30px;
+}
+
+.single_takecare p{
+	margin: 20px 0px;
+}
+
+.single_takecare ul li{
+	list-style-position: inside;
+	margin: 10px 0px;
+}
+
 
 /* media querry code start here   */
 
@@ -548,6 +584,20 @@ form{
 	text-align: center;
 }
 
+/* Match section ends here  */
+
+/* take care section start here  */
+
+#takecare_parent{
+	display: block;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.single_takecare{
+	margin-bottom: 70px;
+}
+
 }
 
 
@@ -633,6 +683,20 @@ form{
 	margin-left: 70px;
 	margin-right: 70px;
 	grid-gap: 35px;
+}
+
+/* Match section ends here  */
+
+/* take care section start here  */
+
+#takecare_parent{
+	display: block;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+.single_takecare{
+	margin-bottom: 80px;
 }
 
 }
